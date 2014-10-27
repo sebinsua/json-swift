@@ -171,6 +171,23 @@ class JSValueUsageTests : XCTestCase {
             XCTAssertEqual(error.code, JSValue.ErrorCode.KeyNotFound.code)
         }
     }
+    
+    func testEnhancementRequest18() {
+        var object: JSON = [:]
+        object["one"] = 1
+        
+        var array: [JSON] = []
+        for index in 1...10 {
+            // nope... my stupid bug...
+            array.append(JSON(int: index))
+        }
+        
+        object["array"] = JSON(array)
+        XCTAssertEqual(array.count, 10)
+        
+        var root: JSON = []
+        root["object"] = object
+    }
 
 // Disabling these tests for now as they are not order deterministic.
 //

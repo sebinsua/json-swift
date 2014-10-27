@@ -16,6 +16,19 @@
 		7D560FB2199957E700270602 /* JSValue.Literals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D560FB0199957E700270602 /* JSValue.Literals.swift */; };
 		7D773D5219A3AB6700D3948D /* ReplayableGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D773D5019A3AB6700D3948D /* ReplayableGenerator.swift */; };
 		7D859B1A199963FD00879B9B /* JSValue.ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D859B18199963FD00879B9B /* JSValue.ErrorHandling.swift */; };
+		7D859B1B1999652900879B9B /* JSValueTests.Literals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCD0BE7199928BB008DC49F /* JSValueTests.Literals.swift */; };
+		7D9D608019DB07F500FED324 /* JSValueTests.Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D30EE2D1999EFF300F3AA17 /* JSValueTests.Equatable.swift */; };
+		7D9D608119DB07F500FED324 /* JSValueTests.Literals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCD0BE7199928BB008DC49F /* JSValueTests.Literals.swift */; };
+		7D9D608219DB07F500FED324 /* JSValueTests.Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D30EE311999F79B00F3AA17 /* JSValueTests.Parsing.swift */; };
+		7D9D608319DB07F500FED324 /* JSValueTests.Usage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D560FB31999583200270602 /* JSValueTests.Usage.swift */; };
+		7D9D608419DB07F500FED324 /* JSValueTests.Indexers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02E651199D81A50060CEFE /* JSValueTests.Indexers.swift */; };
+		7D9D608519DB07F500FED324 /* JSValueTests.Performance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0BED21199EB11A00D88D5E /* JSValueTests.Performance.swift */; };
+		7D9D608619DB080000FED324 /* JSValueTests.Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D30EE311999F79B00F3AA17 /* JSValueTests.Parsing.swift */; };
+		7D9D608719DB0EDC00FED324 /* small-dict.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D584C6419A7ED69005385A1 /* small-dict.json */; };
+		7D9D608819DB0EDC00FED324 /* medium-dict.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D584C6319A7ED69005385A1 /* medium-dict.json */; };
+		7D9D608919DB0EDC00FED324 /* large-dict.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D584C6219A7ED69005385A1 /* large-dict.json */; };
+		7D9D608A19DB0EDC00FED324 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D07B2D2199EB2EE0084611B /* sample.json */; };
+		7D9E253419AFA2E40098C765 /* JSValueTests.Performance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0BED21199EB11A00D88D5E /* JSValueTests.Performance.swift */; };
 		7DCD0BEC19993630008DC49F /* JSValue.Accessors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCD0BEA19993630008DC49F /* JSValue.Accessors.swift */; };
 		7DCD0BEF199937AA008DC49F /* JSValue.Indexers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCD0BED199937AA008DC49F /* JSValue.Indexers.swift */; };
 /* End PBXBuildFile section */
@@ -218,6 +231,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7D1E3637199478A600856119 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D9D608719DB0EDC00FED324 /* small-dict.json in Resources */,
+				7D9D608819DB0EDC00FED324 /* medium-dict.json in Resources */,
+				7D9D608919DB0EDC00FED324 /* large-dict.json in Resources */,
+				7D9D608A19DB0EDC00FED324 /* sample.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D7BD7C0195418CB00AC2E4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D7BD7CB195418CC00AC2E4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D584C6619A7ED69005385A1 /* medium-dict.json in Resources */,
+				7D584C6719A7ED69005385A1 /* small-dict.json in Resources */,
+				7D07B2D3199EB2EE0084611B /* sample.json in Resources */,
+				7D584C6519A7ED69005385A1 /* large-dict.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -235,6 +277,49 @@
 				7DCD0BEC19993630008DC49F /* JSValue.Accessors.swift in Sources */,
 				7D773D5219A3AB6700D3948D /* ReplayableGenerator.swift in Sources */,
 				7D30EE341999F82D00F3AA17 /* JSValue.Parsing.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D1E3635199478A600856119 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D9D608419DB07F500FED324 /* JSValueTests.Indexers.swift in Sources */,
+				7D9D608019DB07F500FED324 /* JSValueTests.Equatable.swift in Sources */,
+				7D9D608219DB07F500FED324 /* JSValueTests.Parsing.swift in Sources */,
+				7D9D608119DB07F500FED324 /* JSValueTests.Literals.swift in Sources */,
+				7D9D608519DB07F500FED324 /* JSValueTests.Performance.swift in Sources */,
+				7D9D608319DB07F500FED324 /* JSValueTests.Usage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D7BD7BD195418CB00AC2E4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D37F77F19A297430090D4B8 /* JSValue.Accessors.swift in Sources */,
+				7D37F78119A297430090D4B8 /* JSValue.Encodings.swift in Sources */,
+				7D37F77419A28AFA0090D4B8 /* Error.swift in Sources */,
+				7D37F78419A297430090D4B8 /* JSValue.Literals.swift in Sources */,
+				7D37F78219A297430090D4B8 /* JSValue.ErrorHandling.swift in Sources */,
+				7D37F77E19A297430090D4B8 /* JSValue.swift in Sources */,
+				7D1E364F19947B5900856119 /* Functional.swift in Sources */,
+				7D773D5119A3AB6700D3948D /* ReplayableGenerator.swift in Sources */,
+				7D37F78319A297430090D4B8 /* JSValue.Indexers.swift in Sources */,
+				7D37F78519A297430090D4B8 /* JSValue.Parsing.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D7BD7C9195418CC00AC2E4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D30EE2E1999EFF300F3AA17 /* JSValueTests.Equatable.swift in Sources */,
+				7D560FB41999583200270602 /* JSValueTests.Usage.swift in Sources */,
+				7D70F3A8199DA516002BA827 /* JSValueTests.Indexers.swift in Sources */,
+				7D9E253419AFA2E40098C765 /* JSValueTests.Performance.swift in Sources */,
+				7D9D608619DB080000FED324 /* JSValueTests.Parsing.swift in Sources */,
+				7D859B1B1999652900879B9B /* JSValueTests.Literals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
